@@ -1,0 +1,6 @@
+@EveStack_EIS.Api_HostAddress = http://localhost:5038
+
+GET {{EveStack_EIS.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
