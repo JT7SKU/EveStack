@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/Eve Online/" />
+  <Folder Name="/Eve Online/ESI/">
+    <Project Path="EveStack ESI.Api/EveStack ESI.Api.csproj" />
+  </Folder>
+</Solution>
