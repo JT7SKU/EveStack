@@ -10,4 +10,5 @@
     <Project Path="EveStack SDE.Api/EveStack SDE.Api.csproj" Id="76e1d3ac-c450-406f-95ea-1e9b529a54e4" />
     <Project Path="EveStack SDE.Service/EveStack SDE.Service.csproj" Id="a28d3d6a-8ba1-4770-9f21-80dd38fc0a3d" />
   </Folder>
+  <Folder Name="/Eve3rdParty/" />
 </Solution>
