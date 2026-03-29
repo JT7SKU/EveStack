@@ -1,0 +1,6 @@
+@EveStack.Eve3rdparty_HostAddress = http://localhost:5261
+
+GET {{EveStack.Eve3rdparty_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

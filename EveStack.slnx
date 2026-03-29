@@ -1,14 +1,16 @@
 <Solution>
   <Folder Name="/Eve Online/" />
   <Folder Name="/Eve Online/EIS/">
-    <Project Path="EveStack EIS.Api/EveStack EIS.Api.csproj" Id="ae4f43f5-cb44-4b40-a16c-b9f8aac832d0" />
+    <Project Path="EIS/EveStack EIS.Api/EveStack EIS.Api.csproj" />
   </Folder>
   <Folder Name="/Eve Online/ESI/">
-    <Project Path="EveStack ESI.Api/EveStack ESI.Api.csproj" />
+    <Project Path="ESI/EveStack ESI.Api/EveStack ESI.Api.csproj" />
   </Folder>
   <Folder Name="/Eve Online/SDE/">
-    <Project Path="EveStack SDE.Api/EveStack SDE.Api.csproj" Id="76e1d3ac-c450-406f-95ea-1e9b529a54e4" />
-    <Project Path="EveStack SDE.Service/EveStack SDE.Service.csproj" Id="a28d3d6a-8ba1-4770-9f21-80dd38fc0a3d" />
+    <Project Path="SDE/EveStack SDE.Api/EveStack SDE.Api.csproj" />
+    <Project Path="SDE/EveStack SDE.Service/EveStack SDE.Service.csproj" />
   </Folder>
-  <Folder Name="/Eve3rdParty/" />
+  <Folder Name="/Eve3rdParty/">
+    <Project Path="Eve3rdParty/EveStack.Eve3rdparty.Api/EveStack.Eve3rdparty.Api.csproj" />
+  </Folder>
 </Solution>
