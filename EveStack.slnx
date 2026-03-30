@@ -2,15 +2,22 @@
   <Folder Name="/Eve Online/" />
   <Folder Name="/Eve Online/EIS/">
     <Project Path="EIS/EveStack EIS.Api/EveStack EIS.Api.csproj" />
+    <Project Path="EIS/EveStack.EIS.Kontrakti/EveStack.EIS.Kontrakti.csproj" Id="84a8213e-740f-44f4-9231-d1f0152f02d9" />
+    <Project Path="EIS/EveStack.EIS.Service/EveStack.EIS.Service.csproj" />
   </Folder>
   <Folder Name="/Eve Online/ESI/">
     <Project Path="ESI/EveStack ESI.Api/EveStack ESI.Api.csproj" />
+    <Project Path="ESI/EveStack.ESI.Kontrakti/EveStack.ESI.Kontrakti.csproj" Id="8f83df04-7940-4cfb-98dc-224594845a54" />
+    <Project Path="ESI/EveStack.ESI.Service/EveStack.ESI.Service.csproj" Id="0de06a63-d138-47a4-9c37-e0f23969f89a" />
   </Folder>
   <Folder Name="/Eve Online/SDE/">
     <Project Path="SDE/EveStack SDE.Api/EveStack SDE.Api.csproj" />
     <Project Path="SDE/EveStack SDE.Service/EveStack SDE.Service.csproj" />
+    <Project Path="SDE/EveStack.SDE.Kontrakti/EveStack.SDE.Kontrakti.csproj" Id="c7697179-65b5-4405-8438-694709d31daf" />
   </Folder>
   <Folder Name="/Eve3rdParty/">
     <Project Path="Eve3rdParty/EveStack.Eve3rdparty.Api/EveStack.Eve3rdparty.Api.csproj" />
+    <Project Path="Eve3rdParty/EveStack.Eve3rdParty.Service/EveStack.Eve3rdParty.Service.csproj" Id="e3821c88-7d2b-4002-b3ae-60a3abb48a9e" />
+    <Project Path="EveStack.Eve3rdParty.Kontrakti/EveStack.Eve3rdParty.Kontrakti.csproj" Id="3df53193-b25c-44c5-8063-370a35d51079" />
   </Folder>
 </Solution>
