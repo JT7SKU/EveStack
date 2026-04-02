@@ -13,6 +13,8 @@
   <Folder Name="/Eve Online/SDE/">
     <Project Path="SDE/EveStack SDE.Api/EveStack SDE.Api.csproj" />
     <Project Path="SDE/EveStack SDE.Service/EveStack SDE.Service.csproj" />
+    <Project Path="SDE/EveStack.SDE.Apphost.AppHost/EveStack.SDE.Apphost.csproj" Id="f6b35776-b40a-44fb-8bf3-46c90321fd08" />
+    <Project Path="SDE/EveStack.SDE.Apphost.ServiceDefaults/EveStack.SDE.ServiceDefaults.csproj" />
     <Project Path="SDE/EveStack.SDE.Kontrakti/EveStack.SDE.Kontrakti.csproj" Id="c7697179-65b5-4405-8438-694709d31daf" />
   </Folder>
   <Folder Name="/Eve3rdParty/">

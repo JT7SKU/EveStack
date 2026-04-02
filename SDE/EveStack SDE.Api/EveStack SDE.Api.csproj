@@ -11,4 +11,8 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EveStack.SDE.Apphost.ServiceDefaults\EveStack.SDE.ServiceDefaults.csproj" />
+  </ItemGroup>
+
 </Project>
