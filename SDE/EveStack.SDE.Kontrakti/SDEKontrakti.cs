@@ -8,9 +8,10 @@ namespace EveStack.SDE.Kontrakti
         Yaml
         
     }
-    public interface ISDEKontrakti
+    public interface ISDERyyni : IGrainWithStringKey
     {
-
+        Task HaeUusiBuildi();
+        Task LueJsonRivit(string uusinBuildi);
     }
     public class SDEKontrakti
     {

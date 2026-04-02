@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EveStack SDE.Api\EveStack SDE.Api.csproj" />
+    <ProjectReference Include="..\EveStack SDE.Api\EveStack SDE.Api.csproj" AspireProjectMetadataTypeName="SdeApi" />
   </ItemGroup>
 
 </Project>

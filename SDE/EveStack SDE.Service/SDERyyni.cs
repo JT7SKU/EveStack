@@ -1,7 +1,7 @@
-﻿using System.Text.Json;
-namespace EveStack_SDE.Service
+﻿
+namespace EveStack.SDE.Service
 {
-    public class SDERyyni
+    public class SDERyyni : Grain, ISDERyyni
     {
         private string latestbuild = "developers.eveonline.com/static-data/tranquility/latest.jsonl";
         private string sde = "";
@@ -9,18 +9,18 @@ namespace EveStack_SDE.Service
         {
             try
             {
-                sde = ReadJsonl(latestbuild);
+                sde = LueJsonRivit(latestbuild);
             }
             catch (Exception)
             {
 
                 throw;
             }
-            
+
             return Task.CompletedTask;
         }
 
-        private string ReadJsonl(string latestbuild)
+        private string LueJsonRivit(string latestbuild)
         {
             throw new NotImplementedException();
         }

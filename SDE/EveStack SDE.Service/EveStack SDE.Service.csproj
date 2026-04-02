@@ -5,10 +5,12 @@
     <RootNamespace>EveStack_SDE.Service</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+		<RootNamespace>EveStack.SDE.Service</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="JsonStreamer.SystemTextJson" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Orleans.Sdk" Version="10.0.1" />
     <PackageReference Include="System.Text.Json" Version="10.0.5" />
   </ItemGroup>
 

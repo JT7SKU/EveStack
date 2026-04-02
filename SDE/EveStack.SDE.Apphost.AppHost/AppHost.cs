@@ -6,7 +6,7 @@ public partial class Program
 
         var postress = rakentaja.AddPostgres("postgres");
         var postreDB = postress.AddDatabase("pgdb");
-        rakentaja.AddProject<Projects.EveStack_SDE_Api>("evestack-sde-api").WaitFor(postreDB).WithReference(postreDB);
+        rakentaja.AddProject<Projects.SdeApi>("sde-api").WaitFor(postreDB).WithReference(postreDB);
         
 
 
