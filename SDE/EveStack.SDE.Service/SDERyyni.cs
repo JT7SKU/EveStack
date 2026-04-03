@@ -5,25 +5,22 @@ using System.Text.Json;
 
 namespace EveStack.SDE.Service
 {
-    sealed class SDERyyni([PersistentState("state")] IPersistentState<SDERyyni.SdePakkaus>) : Grain, ISDERyyni
+    sealed class SDERyyni([PersistentState("state")] IPersistentState<SDERyyni.SdePakkaus> state) : Grain, ISDERyyni
     {
-        private string? perusPath;
+        private string? perusPath = "developers.eveonline.com/static-data/tranquility/";
         private string? uusingbuildiurli;
-        private string? dataJsonlUrli; 
+        private string? dataJsonlUrli;
         private StaattinenData? sde;
         private List<StaattinenData>? tiedot;
         private  DataFormaatti formaatti;
         private string? dataYamlurl;
         private int buildiNro;
 
-        private SDERyyni()
-        {
-            this.perusPath = "developers.eveonline.com/static-data/tranquility/";
-            this.uusingbuildiurli = $"{perusPath}latest.jsonl";
-            this.dataJsonlUrli = $"{perusPath}eve-online-static-data-{buildiNro}-jsonl.zip";
-            this.dataYamlurl = $"{perusPath}eve-online-static-data-{buildiNro}-yaml.zip";
+        public string? Uusingbuildiurli { get => uusingbuildiurli; set => uusingbuildiurli = value; }
+        public string? DataJsonlUrli { get => dataJsonlUrli; set => dataJsonlUrli = value; }
+        public string? DataYamlurl { get => dataYamlurl; set => dataYamlurl = value; }
 
-        }
+        
         
         internal class SdePakkaus
         {
@@ -31,33 +28,26 @@ namespace EveStack.SDE.Service
             string arvo;
             Dictionary<string, string> keyValuePairs;
         }
-        public Task GetLatestBuild()
+       
+        Task ISDERyyni.HaeUusiBuildi()
         {
             try
             {
-                
+
             }
             catch (Exception)
             {
 
                 throw;
             }
-
             return Task.CompletedTask;
         }
 
        
 
-        public Task HaeUusiBuildi()
+        async Task<List<SDEJsonLines>> ISDERyyni.LueJsonRivit(string uusinBuildinro)
         {
-            throw new NotImplementedException();
-        }
-
-       
-
-        async Task<List<object>> ISDERyyni.LueJsonRivit(string uusinBuildinro)
-        {
-            var tulos = new List<SdePakkaus>();
+            var tulos = new List<SDEJsonLines>();
 
             using (StreamReader reader = new StreamReader(uusinBuildinro))
             {

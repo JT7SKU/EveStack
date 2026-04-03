@@ -11,7 +11,7 @@ namespace EveStack.SDE.Kontrakti
     public interface ISDERyyni : IGrainWithStringKey
     {
         Task HaeUusiBuildi();
-        Task<List<object>> LueJsonRivit(string uusinBuildinro);
+        Task<List<SDEJsonLines>> LueJsonRivit(string uusinBuildinro);
     }
    
     public record Taivaallinen
