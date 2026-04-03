@@ -2,7 +2,7 @@
 
 namespace EveStack.SDE.Kontrakti
 {
-    internal enum DataFormaatti
+    public enum DataFormaatti
     {
         JsonLines,
         Yaml
@@ -11,13 +11,14 @@ namespace EveStack.SDE.Kontrakti
     public interface ISDERyyni : IGrainWithStringKey
     {
         Task HaeUusiBuildi();
-        Task LueJsonRivit(string uusinBuildi);
+        Task<List<object>> LueJsonRivit(string uusinBuildinro);
     }
    
     public record Taivaallinen
     {
 
     }
+
     public record SDEJsonLines
     {
         string _avain = "sde";
