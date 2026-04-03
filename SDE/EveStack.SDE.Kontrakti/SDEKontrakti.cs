@@ -13,10 +13,7 @@ namespace EveStack.SDE.Kontrakti
         Task HaeUusiBuildi();
         Task LueJsonRivit(string uusinBuildi);
     }
-    public class SDEKontrakti
-    {
-
-    }
+   
     public record Taivaallinen
     {
 
@@ -27,7 +24,7 @@ namespace EveStack.SDE.Kontrakti
         string? rakennusNumero;
         DateTime? julkaisuPäivä;
     }
-    public record SDE
+    public record StaattinenData
     {
         int buildNumber;
         DateTime releaseDate;
