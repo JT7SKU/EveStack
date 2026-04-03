@@ -6,7 +6,11 @@ namespace EveStack.SDE.Service
     sealed class SDERyyni : Grain
     {
         private string latestbuild = "developers.eveonline.com/static-data/tranquility/latest.jsonl";
-        private string sde;
+        private SdePakkaus sde;
+        internal class SdePakkaus
+        {
+
+        }
         public Task GetLatestBuild()
         {
             try
@@ -22,9 +26,9 @@ namespace EveStack.SDE.Service
             return Task.CompletedTask;
         }
 
-        private static async Task<List<T>> LueJsonRivitAsync(string latestbuild)
+        private static async Task<List<SdePakkaus>> LueJsonRivitAsync(string latestbuild)
         {
-            var tulos = new List<T>();
+            var tulos = new List<SdePakkaus>();
 
             using (StreamReader reader = new StreamReader(latestbuild))
             {
